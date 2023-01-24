@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  overflow-x: hidden;
+  font-family: 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+:root {
+  --sm-width: 640px;
+  --md-width: 768px;
+  --lg-width: 1024px;
+  --xl-width: 1280px;
+  --row-gap-title: 8vh;
+  --main-color: rgb(15 16 24);
+  --title-color: rgb(180 17 111);
+  --second-color: rgb(39 202 146);
+  --white-color: #fff;
+  --gray-color: #b9b9b9;
+  --gray-color-text: #8c8c8c;
+  --font-size: 9vw;
+  --font-size-p: 5vw;
+  --font-size-reduce: 1vw;
+  --icon-hover-sm: 3.65rem;
+}
+
+@media (min-width: 425px) {
+  :root {
+    --font-size: 7vw;
+    --font-size-p: 5vw;
+    --font-size-reduce: 0.6vw;
+  }
+}
+
+@media (min-width: 520px) {
+  :root {
+    --font-size: 6vw;
+    --font-size-p: 4vw;
+    --font-size-reduce: 0.4vw;
+    --row-gap-title: 10vh;
+  }
+}
+
+@media (min-width: 600px) {
+  :root {
+    --font-size: 2.4rem;
+    --font-size-p: 1.7rem;
+    --font-size-reduce: 0.3rem;
+  }
+}
+
+#root {
+  margin: 0 auto;
+  max-width: 1300px;
+  min-height: 100vh;
+  text-align: center;
+  /* background-color: #0e1a25;
+   */
+  background-color: var(--main-color);
+}
+
+.Typewriter {
+  display: inline;
+}
+
+.spanAnimated {
+  font-weight: 700;
+  font-size: var(--font-size);
+
+  margin-left: 10px;
+  color: var(--title-color);
+}
+
+/* i {
+  font-weight: 700;
+  font-size: calc(var(--font-size-sm) - 1vw);
+  margin-left: 10px;
+  color: var(--title-color);
+} */
+
+.ir {
+  display: block;
+  overflow: visible;
+  padding: 0 0 100%;
+  position: relative;
+  height: 0;
+  width: 100%;
+}
+.ir > * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.Typewriter__cursor {
+  animation-duration: 12s;
+}
+
+.timeDelay {
+  animation: Typewriter-cursor 12s infinite;
+  animation-duration: 4s;
+}
+
+#idbadge {
+  border: 2px solid var(--second-color);
+  border-radius: 4px;
+}
+
+/* SCROLL SVG */
+.wheel {
+  animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(3.75rem);
+  }
+}

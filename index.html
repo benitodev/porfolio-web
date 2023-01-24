@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=La+Belle+Aurore&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS TO STYLE CUSTOM LOADER PAGE -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(15 16 24);
+      }
+      .loader-page {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(15 16 24);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="loader-page">
+        <svg
+          width="120"
+          height="30"
+          viewBox="0 0 120 30"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#fff"
+        >
+          <circle cx="15" cy="15" r="15">
+            <animate
+              attributeName="r"
+              from="15"
+              to="15"
+              begin="0s"
+              dur="0.8s"
+              values="15;9;15"
+              calcMode="linear"
+              repeatCount="indefinite"
+            />
+            <animate
+              attributeName="fill-opacity"
+              from="1"
+              to="1"
+              begin="0s"
+              dur="0.8s"
+              values="1;.5;1"
+              calcMode="linear"
+              repeatCount="indefinite"
+            />
+          </circle>
+          <circle cx="60" cy="15" r="9" fill-opacity="0.3">
+            <animate
+              attributeName="r"
+              from="9"
+              to="9"
+              begin="0s"
+              dur="0.8s"
+              values="9;15;9"
+              calcMode="linear"
+              repeatCount="indefinite"
+            />
+            <animate
+              attributeName="fill-opacity"
+              from="0.5"
+              to="0.5"
+              begin="0s"
+              dur="0.8s"
+              values=".5;1;.5"
+              calcMode="linear"
+              repeatCount="indefinite"
+            />
+          </circle>
+          <circle cx="105" cy="15" r="15">
+            <animate
+              attributeName="r"
+              from="15"
+              to="15"
+              begin="0s"
+              dur="0.8s"
+              values="15;9;15"
+              calcMode="linear"
+              repeatCount="indefinite"
+            />
+            <animate
+              attributeName="fill-opacity"
+              from="1"
+              to="1"
+              begin="0s"
+              dur="0.8s"
+              values="1;.5;1"
+              calcMode="linear"
+              repeatCount="indefinite"
+            />
+          </circle>
+        </svg>
+
+        <!-- <svg
+          version="1.1"
+          id="L5"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 100 100"
+          enable-background="new 0 0 0 0"
+          xml:space="preserve"
+        >
+          <circle fill="#fff" stroke="none" cx="6" cy="50" r="6">
+            <animateTransform
+              attributeName="transform"
+              dur="1s"
+              type="translate"
+              values="0 15 ; 0 -15; 0 15"
+              repeatCount="indefinite"
+              begin="0.1"
+            />
+          </circle>
+          <circle fill="#fff" stroke="none" cx="30" cy="50" r="6">
+            <animateTransform
+              attributeName="transform"
+              dur="1s"
+              type="translate"
+              values="0 10 ; 0 -10; 0 10"
+              repeatCount="indefinite"
+              begin="0.2"
+            />
+          </circle>
+          <circle fill="#fff" stroke="none" cx="54" cy="50" r="6">
+            <animateTransform
+              attributeName="transform"
+              dur="1s"
+              type="translate"
+              values="0 5 ; 0 -5; 0 5"
+              repeatCount="indefinite"
+              begin="0.3"
+            />
+          </circle>
+        </svg> -->
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+[
+  {
+    "title": "Ecommerce",
+    "stack": "Fullstack",
+    "url": "src/assets/projects/product-list.png",
+    "technologies": [
+      "React",
+      "Typescript",
+      "MongoDB",
+      "Express",
+      "Redux Toolkit",
+      "Styled-Components"
+    ]
+  },
+  {
+    "title": "Rick and morty (Hackathon)",
+    "stack": "Frontend",
+    "url": "src/assets/projects/rick-morty-mobile.png",
+    "technologies": [
+      "React",
+      "Graphql",
+      "Graphql-generator",
+      "apollo/client",
+      "MUI material"
+    ]
+  },
+  {
+    "title": "Gallery",
+    "stack": "Fullstack",
+    "url": "src/assets/projects/gallery-mobile.png",
+    "technologies": ["React", "Typescript", "MongoDB", "Express", "TailwindCss"]
+  },
+  {
+    "title": "Movies",
+    "stack": "Frontend",
+    "url": "src/assets/projects/movies-desktop.png",
+    "technologies": [
+      "React",
+      "Typescript",
+      "Redux Toolkit",
+      "Express",
+      "TailwindCss"
+    ]
+  }
+]
