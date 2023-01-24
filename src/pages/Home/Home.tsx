@@ -22,7 +22,7 @@ const Home = () => {
       <SocialMediaContainer />
       {/* </Wrapper> */}
       <ImgContainer>
-        <Img src="src/assets/main-image.png" alt="" />
+        <Img src="main-image.png" alt="" />
       </ImgContainer>
 
       <Presentation />

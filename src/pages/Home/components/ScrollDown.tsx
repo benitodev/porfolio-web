@@ -40,7 +40,7 @@ const ScrollDown = () => {
           ></path>
         </svg>
         <Span>Scroll down</Span>
-        <Img src="src/assets/down-arrow-white.png" />
+        <Img src="down-arrow-white.png" />
       </Link>
     </Container>
   );
