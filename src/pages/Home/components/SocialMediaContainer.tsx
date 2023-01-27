@@ -7,7 +7,7 @@ const SocialMediaContainer = ({
 }) => {
   return (
     <Container flexDirect={flexDirection}>
-      <Link href="#" title="GitHub" target="_blank">
+      <Link href="https://github.com/benitodev" title="GitHub" target="_blank">
         <div className="ir">
           <svg
             fill="#7f4cf5"
@@ -20,7 +20,11 @@ const SocialMediaContainer = ({
           </svg>
         </div>
       </Link>
-      <Link href="#" title="Linkedin" target="_blank">
+      <Link
+        href="https://www.linkedin.com/in/benito-%C3%A1lvarez-707a34206/"
+        title="Linkedin"
+        target="_blank"
+      >
         <div className="ir">
           <svg
             fill="#7f4cf5"
@@ -33,7 +37,7 @@ const SocialMediaContainer = ({
           </svg>
         </div>
       </Link>
-      <Link href="#" title="Instagram" target="_blank">
+      <Link title="Instagram" target="_blank">
         <div className="ir">
           <svg
             fill="#7f4cf5"

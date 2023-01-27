@@ -3,8 +3,10 @@ import { formSchema } from '../schemas/form.schema';
 import { yupResolver } from '@hookform/resolvers/yup';
 import Button from '../../../components/Button/Button';
 import { Form } from './ContactForm.styled';
-import Input from './Input';
+import emailjs from '@emailjs/browser';
 import { Container, InputField, Label, TextareaField } from './Input.styled';
+import { useContext, useRef } from 'react';
+import { LanguageContext } from '../../../context/LanguageContext';
 interface FormInputType {
   name: string;
   email: string;
@@ -18,6 +20,7 @@ const defaultValues = {
 };
 
 const ContactForm = () => {
+  const form = useRef();
   const {
     register,
     handleSubmit,
@@ -26,30 +29,37 @@ const ContactForm = () => {
     defaultValues,
     resolver: yupResolver(formSchema),
   });
+  const { translation } = useContext(LanguageContext);
+  const formTranslation = translation?.Contact?.ContactForm;
   const submitEmail = (data: object) => {
-    console.log(data);
+    emailjs.send(
+      'service_cn262pt',
+      'template_2a4vxqj',
+      form.current,
+      '_UCWFokTWC-jpaGfK'
+    );
   };
   return (
     <div>
       <Form onSubmit={handleSubmit(submitEmail)}>
         <Container>
           <InputField
+            {...register('name')}
             type="text"
-            placeholder="Name"
-            name="name"
+            name="user_name"
             id="name"
             autoComplete="off"
             required
           />
-          <Label className="formLabel">Name</Label>
+          <Label className="formLabel">{formTranslation?.NameLabel}</Label>
           <div>
             <span>{errors.name?.message}</span>
           </div>
         </Container>
         <Container>
           <InputField
+            {...register('email')}
             type="email"
-            placeholder="hi"
             name="email"
             id="email"
             autoComplete="off"
@@ -62,18 +72,18 @@ const ContactForm = () => {
         </Container>
         <Container>
           <TextareaField
-            placeholder="hi"
+            {...register('body')}
             name="body"
             id="email"
             autoComplete="off"
             required
           />
-          <Label className="formLabel">Message</Label>
+          <Label className="formLabel">{formTranslation?.MessageLabel}</Label>
           <div>
             <span>{errors.body?.message}</span>
           </div>
         </Container>
-        <Button value="Send email" />
+        <Button type="button" value={formTranslation?.ButtonSend} />
       </Form>
     </div>
   );

@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import {
   Hello,
   ListDinamicText,
@@ -9,18 +8,18 @@ import {
 } from './HomeTitle.styled';
 import TypeIt from 'typeit-react';
 import { TypeItStyle } from '../../../styled-components/TypeItStyles.styled';
+import { LanguageContext } from '../../../context/LanguageContext';
+import { useContext } from 'react';
 const HomeTitle = () => {
-  const [currentText, setCurrentText] = useState<string>('');
-  useEffect(() => {
-    setTimeout(() => {
-      setCurrentText((current) => current + 'a');
-    }, 3000);
-  }, [currentText]);
+  const { translation } = useContext(LanguageContext);
+  const HomeTitleTranslation = translation?.Home?.HomeTitle;
   return (
     <>
-      <Hello>Hi everyone, </Hello>
+      <Hello>{HomeTitleTranslation?.Hello ?? 'Hola, bienvenidos'} </Hello>
       <Wrapper>
-        <Hello style={{ marginRight: '10px' }}>I'm</Hello>
+        <Hello style={{ marginRight: '10px' }}>
+          {HomeTitleTranslation?.Im ?? 'Soy'}
+        </Hello>
         <TypeItStyle>
           <TypeIt
             as="span"
@@ -42,8 +41,10 @@ const HomeTitle = () => {
         </TypeItStyle>
       </Wrapper>
       <Span>
-        I've been in this for more than 2 years and the passion for coding never
-        dissapears
+        {HomeTitleTranslation?.AboutMe ??
+          `Gran entusiasta del mundo de la tecnología, el trabajo en equipo y comunicación. 
+          Con gusto de aportar, aprender y avanzar en las tareas propuestas, 
+          junto a la motivación constante de crecer como profesional.`}
       </Span>
     </>
   );

@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { devices } from '../../../utility/responsive';
 
 const slideAnimation = keyframes`
   100%{
@@ -32,8 +33,9 @@ export const Hello = styled.h2`
 export const Span = styled.span`
   font-weight: 500;
   font-size: var(--font-size-p);
-  margin: 1rem 0;
+  margin-top: 1rem;
   color: var(--gray-color-text);
+
   /* padding: 0.5rem 0; */
 `;
 

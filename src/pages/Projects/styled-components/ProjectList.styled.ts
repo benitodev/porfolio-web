@@ -16,7 +16,10 @@ export const CardContainer = styled.div`
   cursor: pointer;
   @media (min-width: 560px) {
     display: flex;
-    max-width: 660px;
+    max-width: 500px;
+  }
+  @media ${devices.tablet} {
+    max-width: 560px;
   }
 `;
 
@@ -88,8 +91,13 @@ export const Title = styled.h4`
   margin-top: 0.5rem;
   font-size: 1.3rem;
   color: #bfbfbf;
+
   @media ${devices.tabletS} {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+
+  @media ${devices.tablet} {
+    font-size: 1.6rem;
   }
 `;
 
@@ -118,11 +126,11 @@ export const Tag = styled.span`
   border-radius: 4px;
   color: var(--main-color);
   font-weight: bold;
-  @media ${devices.tabletS} {
-    font-size: 1.2rem;
+  @media ${devices.tablet} {
+    font-size: 1.1rem;
   }
 `;
-export const BorderRadius = styled.a`
+export const BorderRadius = styled.div`
   overflow: hidden;
   background-color: rgb(15 16 24);
   border-radius: 50%;

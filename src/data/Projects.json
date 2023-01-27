@@ -3,6 +3,7 @@
     "title": "Ecommerce",
     "stack": "Fullstack",
     "url": "projects/product-list.PNG",
+    "github_url": "https://github.com/benitodev/Ecommerce-MERN",
     "technologies": [
       "React",
       "Typescript",
@@ -16,6 +17,7 @@
     "title": "Rick and morty (Hackathon)",
     "stack": "Frontend",
     "url": "projects/rick-morty-mobile.PNG",
+    "github_url": "https://github.com/benitodev/hackathon-gentleman-programming",
     "technologies": [
       "React",
       "Graphql",
@@ -27,12 +29,14 @@
   {
     "title": "Gallery",
     "stack": "Fullstack",
+    "github_url": "https://github.com/benitodev/gallery",
     "url": "projects/gallery-mobile.png",
     "technologies": ["React", "Typescript", "MongoDB", "Express", "TailwindCss"]
   },
   {
     "title": "Movies",
     "stack": "Frontend",
+    "github_url": "https://github.com/benitodev/movies-app",
     "url": "projects/movies-desktop.PNG",
     "technologies": [
       "React",

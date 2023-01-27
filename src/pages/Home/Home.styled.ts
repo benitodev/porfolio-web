@@ -25,13 +25,18 @@ export const Img = styled.img`
   filter: grayscale(65%);
   object-fit: cover;
   @media ${devices.tabletS} {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
+  }
+
+  @media ${devices.tablet} {
+    width: 250px;
+    height: 250px;
   }
 
   @media ${devices.laptop} {
-    width: 260px;
-    height: 260px;
+    width: 300px;
+    height: 300px;
   }
 `;
 

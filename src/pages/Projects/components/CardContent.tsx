@@ -17,20 +17,34 @@ interface Props {
   title: string;
   stack: string;
   url: string;
+  github_url: string;
   technologies: string[];
 }
 
-const CardContent = ({ title, stack, url, technologies }: Props) => {
+const CardContent = ({
+  title,
+  stack,
+  url,
+  technologies,
+  github_url,
+}: Props) => {
   return (
     <CardContainer>
       <ImgContainer>
         <DarkenedBackground>
           <IconsContainer className="IconContainer">
             <BorderRadius>
-              <GithubIcon fill="#fff" />
+              <a href={github_url} target="_blank">
+                <GithubIcon fill="#fff" />
+              </a>
             </BorderRadius>
             <BorderRadius>
-              <LinkEyeIcon />
+              <a
+                href="https://github.com/benitodev/hackathon-gentleman-programming"
+                target="_blank"
+              >
+                <LinkEyeIcon />
+              </a>
             </BorderRadius>
           </IconsContainer>
         </DarkenedBackground>

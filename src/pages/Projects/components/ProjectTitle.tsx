@@ -1,27 +1,24 @@
 import TypeIt from 'typeit-react';
 import { TypeItStyle } from '../../../styled-components/TypeItStyles.styled';
 import { Title } from '../../../styled-components/SectionTitle';
+import { useContext } from 'react';
+import { LanguageContext } from '../../../context/LanguageContext';
+import SectionTitle from '../../../components/Title/SectionTitle';
 
 interface Props {
   isVisible: boolean;
 }
 
 const ProjectTitle = ({ isVisible }: Props) => {
+  const { translation } = useContext(LanguageContext);
+  const ProjecTranslation = translation?.Projects?.ProjectTitle;
   return (
     <Title>
-      Some of my
-      {isVisible && (
-        <TypeItStyle display="block">
-          <TypeIt
-            as="span"
-            getBeforeInit={(instance) => {
-              instance.type('Projects').pause(1000);
-
-              return instance;
-            }}
-          />
-        </TypeItStyle>
-      )}
+      <SectionTitle
+        isVisible={isVisible}
+        preTitle={ProjecTranslation?.PreTitle}
+        title={ProjecTranslation?.Title}
+      />
     </Title>
   );
 };

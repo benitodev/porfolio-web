@@ -1,14 +1,15 @@
 import { Contact, Home, Projects } from './pages';
 import { Container, Main } from './styled-components/App.styled';
-import { ThemeProvider } from './context/ThemeContext';
+import { LanguageProvider } from './context/LanguageContext';
 import './App.css';
 import { Header } from './components/Header';
 import Skills from './pages/Skills/Skills';
 import Footer from './components/Footer/Footer';
+import { Line } from './styled-components/Hr.styled';
 const App = () => {
   return (
     <Container>
-      <ThemeProvider>
+      <LanguageProvider>
         <Header />
         <Main>
           <Home />
@@ -16,8 +17,9 @@ const App = () => {
           <Skills />
           <Contact />
         </Main>
+        <Line />
         <Footer />
-      </ThemeProvider>
+      </LanguageProvider>
     </Container>
   );
 };

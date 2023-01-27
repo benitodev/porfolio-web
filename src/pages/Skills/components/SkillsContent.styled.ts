@@ -6,8 +6,11 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 4rem;
+  row-gap: 6rem;
   margin-bottom: 2rem;
+  @media ${devices.tabletS} {
+    row-gap: 8rem;
+  }
 `;
 
 export const SkillContainer = styled.div`

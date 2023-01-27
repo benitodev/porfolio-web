@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { devices } from '../../../utility/responsive';
 
 export const Form = styled.form`
   display: flex;
@@ -6,4 +7,7 @@ export const Form = styled.form`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media ${devices.tabletS} {
+    margin-bottom: 1rem;
+  }
 `;

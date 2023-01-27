@@ -1,12 +1,16 @@
+import { useContext } from 'react';
 import { Container, Img, Link, Span } from './ScrollDown.styled';
+import { LanguageContext } from '../../../context/LanguageContext';
 
 const ScrollDown = () => {
+  const { translation } = useContext(LanguageContext);
+  const Scroll = translation?.Home?.Scroll;
   return (
     <Container>
       <Link>
         <svg
-          width="32px"
-          height="32px"
+          width="26px"
+          height="26px"
           className="scroll-mouse"
           viewBox="0 0 247 390"
           version="1.1"
@@ -39,7 +43,7 @@ const ScrollDown = () => {
             }}
           ></path>
         </svg>
-        <Span>Scroll down</Span>
+        <Span>{Scroll}</Span>
         <Img src="down-arrow-white.png" />
       </Link>
     </Container>

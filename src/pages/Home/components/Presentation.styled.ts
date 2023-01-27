@@ -10,6 +10,10 @@ export const Container = styled.div`
   text-align: left;
   @media ${devices.tablet} {
     grid-column: 3;
+    padding-top: 4rem;
     justify-content: center;
-  } ;
+  }
+  @media ${devices.laptop} {
+    margin-left: 2rem;
+  }
 `;

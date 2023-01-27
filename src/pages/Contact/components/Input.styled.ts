@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { devices } from '../../../utility/responsive';
 
 export const Container = styled.div`
   position: relative;
@@ -49,6 +50,15 @@ export const InputField = styled.input`
   &:invalid {
     box-shadow: none;
   }
+  @media ${devices.tabletS} {
+    font-size: 1.6rem;
+  }
+  @media ${devices.tablet} {
+  }
+  @media ${devices.laptop} {
+    width: 450px;
+    height: 70px;
+  }
 `;
 
 export const TextareaField = styled.textarea`
@@ -96,6 +106,14 @@ export const TextareaField = styled.textarea`
   &:invalid {
     box-shadow: none;
   }
+  @media ${devices.tabletS} {
+    font-size: 1.6rem;
+  }
+  @media ${devices.tablet} {
+  }
+  @media ${devices.laptop} {
+    width: 450px;
+  }
 `;
 
 export const Label = styled.label`
@@ -105,4 +123,7 @@ export const Label = styled.label`
   transition: 0.2s;
   font-size: 1rem;
   color: var(--gray-color-text);
+  @media ${devices.tabletS} {
+    font-size: 1.3rem;
+  }
 `;

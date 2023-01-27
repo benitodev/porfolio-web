@@ -14,7 +14,8 @@ const ButtonResume = ({
     <LinkContainerResume
       style={{ borderColor: 'rgb(127, 76, 245)' }}
       id="idbadge"
-      href={`#${link}`}
+      href="cv.pdf"
+      download="cv.pdf"
     >
       <Span color={spanColor}>{value}</Span>
     </LinkContainerResume>

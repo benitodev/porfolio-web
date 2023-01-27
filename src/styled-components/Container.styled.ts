@@ -20,13 +20,13 @@ export const Container = styled.section<ContainerProps>`
 export const HomeContainer = styled(Container)`
   grid-template-columns: 0.5fr 3fr;
   position: relative;
-  padding-top: 2.5rem;
+  padding-top: 1.8rem;
   align-items: center;
   @media ${devices.tablet} {
-    grid-template-columns: 90px repeat(2, 1fr);
+    grid-template-columns: 50px 340px 1fr;
   }
 
   @media (min-width: 960px) {
-    grid-template-columns: 110px 390px 1fr;
+    grid-template-columns: 70px 390px 1fr;
   }
 `;
