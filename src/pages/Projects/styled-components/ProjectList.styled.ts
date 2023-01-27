@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { devices } from '../../../utility/responsive';
 
+export interface BorderRadiusType {
+  deployed?: string;
+}
+
 export const CardContainer = styled.div`
   width: 100%;
   max-width: 330px;
@@ -130,7 +134,8 @@ export const Tag = styled.span`
     font-size: 1.1rem;
   }
 `;
-export const BorderRadius = styled.div`
+export const BorderRadius = styled.div<BorderRadiusType>`
+ pointer-events: ${(props) => (!!props.deployed ? 'auto' : 'none')} }
   overflow: hidden;
   background-color: rgb(15 16 24);
   border-radius: 50%;

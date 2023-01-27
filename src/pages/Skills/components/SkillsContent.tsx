@@ -1,5 +1,6 @@
 import DatabaseIcon from '../../../components/icons/DatabaseIcon';
 import FrontendIcon from '../../../components/icons/FrontendIcon';
+import GearIcon from '../../../components/icons/GearIcon';
 import {
   Container,
   SkillContainer,
@@ -21,6 +22,7 @@ const SkillsContent = () => {
           <Tag>Material UI</Tag>
           <Tag>Redux Toolkit</Tag>
           <Tag>Graphql</Tag>
+          <Tag>Jest</Tag>
         </TagContainer>
       </SkillContainer>
 
@@ -34,6 +36,19 @@ const SkillsContent = () => {
           <Tag>MongoDB</Tag>
           <Tag>Mongoose</Tag>
           <Tag>Graphql</Tag>
+          <Tag>Jest</Tag>
+        </TagContainer>
+      </SkillContainer>
+
+      <SkillContainer>
+        <GearIcon />
+        <Title>Tools</Title>
+        <TagContainer>
+          <Tag>Docker</Tag>
+          <Tag>NPM</Tag>
+          <Tag>Git</Tag>
+          <Tag>Github</Tag>
+          <Tag>Bash</Tag>
         </TagContainer>
       </SkillContainer>
     </Container>

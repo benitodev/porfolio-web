@@ -17,7 +17,7 @@ const Projects = () => {
   return (
     <Container
       alignItems="flex-start"
-      margin="0 0 3rem"
+      margin="0 0 4rem"
       id={ROUTES.PROJECTS}
       ref={elementRef}
     >

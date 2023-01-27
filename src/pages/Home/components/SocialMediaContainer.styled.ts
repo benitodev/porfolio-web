@@ -13,6 +13,7 @@ export const Container = styled.div<ContainerType>`
   align-items: self-start;
   @media ${devices.laptop} {
     row-gap: 1.4rem;
+    column-gap: 1.4rem;
   }
 `;
 

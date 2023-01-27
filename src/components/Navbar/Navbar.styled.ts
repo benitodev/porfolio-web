@@ -9,9 +9,12 @@ export const Container = styled.div`
   column-gap: 2rem;
   align-items: center;
   padding: 0.5rem 1rem;
-  background-color: rgb(33 33 35/0.2);
+  background-color: #14141ed6;
   border-color: #282b3c79;
+
   @media ${devices.laptop} {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
   } ;
 `;
 

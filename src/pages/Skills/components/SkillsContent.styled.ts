@@ -23,6 +23,13 @@ export const SkillContainer = styled.div`
     width: 4rem;
     height: 4rem;
   }
+
+  @media ${devices.tablet} {
+    & > svg {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
 `;
 
 export const Title = styled.h4`
@@ -38,6 +45,7 @@ export const Title = styled.h4`
 export const TagContainer = styled.div`
   display: flex;
   width: 100%;
+  max-width: 500px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;

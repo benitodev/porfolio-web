@@ -7,7 +7,9 @@ export const Container = styled.div`
   }
 `;
 
-export const Select = styled.div``;
+export const Select = styled.div`
+  overflow: hidden;
+`;
 export const Option = styled.option`
   display: inline;
   top: 0;

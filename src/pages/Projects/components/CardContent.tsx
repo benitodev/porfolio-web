@@ -18,12 +18,14 @@ interface Props {
   stack: string;
   url: string;
   github_url: string;
+  deploy_url: string;
   technologies: string[];
 }
 
 const CardContent = ({
   title,
   stack,
+  deploy_url,
   url,
   technologies,
   github_url,
@@ -38,11 +40,8 @@ const CardContent = ({
                 <GithubIcon fill="#fff" />
               </a>
             </BorderRadius>
-            <BorderRadius>
-              <a
-                href="https://github.com/benitodev/hackathon-gentleman-programming"
-                target="_blank"
-              >
+            <BorderRadius deployed={deploy_url}>
+              <a href={deploy_url} target="_blank">
                 <LinkEyeIcon />
               </a>
             </BorderRadius>

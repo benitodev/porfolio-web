@@ -10,4 +10,12 @@ export const Form = styled.form`
   @media ${devices.tabletS} {
     margin-bottom: 1rem;
   }
+
+  @media ${devices.tablet} {
+    margin-bottom: 2rem;
+  }
+
+  @media ${devices.laptop} {
+    margin-bottom: 4.5rem;
+  }
 `;

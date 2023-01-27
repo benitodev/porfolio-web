@@ -4,6 +4,7 @@
     "stack": "Fullstack",
     "url": "projects/product-list.PNG",
     "github_url": "https://github.com/benitodev/Ecommerce-MERN",
+    "deploy_url": "",
     "technologies": [
       "React",
       "Typescript",
@@ -17,6 +18,7 @@
     "title": "Rick and morty (Hackathon)",
     "stack": "Frontend",
     "url": "projects/rick-morty-mobile.PNG",
+    "deploy_url": "https://rick-morty-hackathon.netlify.app",
     "github_url": "https://github.com/benitodev/hackathon-gentleman-programming",
     "technologies": [
       "React",
@@ -29,6 +31,7 @@
   {
     "title": "Gallery",
     "stack": "Fullstack",
+    "deploy_url": "https://benitodev-movies-app.netlify.app",
     "github_url": "https://github.com/benitodev/gallery",
     "url": "projects/gallery-mobile.png",
     "technologies": ["React", "Typescript", "MongoDB", "Express", "TailwindCss"]
@@ -36,6 +39,7 @@
   {
     "title": "Movies",
     "stack": "Frontend",
+    "deploy_url": "https://benitodev-movies-app.netlify.app",
     "github_url": "https://github.com/benitodev/movies-app",
     "url": "projects/movies-desktop.PNG",
     "technologies": [
