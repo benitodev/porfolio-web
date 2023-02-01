@@ -135,11 +135,19 @@ export const Tag = styled.span`
   }
 `;
 export const BorderRadius = styled.div<BorderRadiusType>`
- pointer-events: ${(props) => (!!props.deployed ? 'auto' : 'none')} }
   overflow: hidden;
   background-color: rgb(15 16 24);
   border-radius: 50%;
   padding: 0.65rem;
   width: var(--icon-hover-sm);
   height: var(--icon-hover-sm);
+`;
+
+export const BorderRadiusLink = styled(BorderRadius)`
+  pointer-events: ${(props) => (!!props.deployed ? 'auto' : 'none')};
+  background-color: ${(props) =>
+    !!props.deployed ? 'var(--main-color)' : 'var(--main-color-disabled)'};
+  & > a svg {
+    fill: ${(props) => (!!props.deployed ? '#fff' : '#ffffff80')};
+  }
 `;

@@ -11,6 +11,7 @@ import {
   DarkenedBackground,
   IconsContainer,
   BorderRadius,
+  BorderRadiusLink,
 } from '../styled-components/ProjectList.styled';
 
 interface Props {
@@ -40,11 +41,11 @@ const CardContent = ({
                 <GithubIcon fill="#fff" />
               </a>
             </BorderRadius>
-            <BorderRadius deployed={deploy_url}>
+            <BorderRadiusLink deployed={deploy_url}>
               <a href={deploy_url} target="_blank">
                 <LinkEyeIcon />
               </a>
-            </BorderRadius>
+            </BorderRadiusLink>
           </IconsContainer>
         </DarkenedBackground>
         <img src={url} alt="" />
