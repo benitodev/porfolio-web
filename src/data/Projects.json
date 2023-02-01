@@ -31,7 +31,7 @@
   {
     "title": "Gallery",
     "stack": "Fullstack",
-    "deploy_url": "https://benitodev-movies-app.netlify.app",
+    "deploy_url": "",
     "github_url": "https://github.com/benitodev/gallery",
     "url": "projects/gallery-mobile.png",
     "technologies": ["React", "Typescript", "MongoDB", "Express", "TailwindCss"]
